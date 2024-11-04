@@ -31,7 +31,7 @@ class Habitant:
         if value_to_downgrade > 0 and self.__data.salary - value_to_downgrade >= 0:
             self.__data.salary -= value_to_downgrade
 
-    def get_info(self):
+    def __str__(self):
         return f'ID: {self.__ident}, Имя: {self.__data.name}, Работа: {self.__data.job}, Зарплата: {self.__data.salary}, Баланс: {self.__data.balance}'
 
     def get_ds(self):

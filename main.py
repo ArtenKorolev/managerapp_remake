@@ -31,7 +31,7 @@ if __name__ == '__main__':
 
     if all.is_success():
         for i in all.get_response():
-            print(i.get_info())
+            print(i)
     else:
         print(all.get_response())
 
@@ -41,7 +41,4 @@ if __name__ == '__main__':
 
     by_id = get_by_id.run(ident)
 
-    if by_id.is_success():
-        print(by_id.get_response().get_info())
-    else:
-        print(by_id.get_response())
+    print(by_id.get_response())
